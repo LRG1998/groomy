@@ -34,6 +34,11 @@
             this.txtPassInput = new System.Windows.Forms.TextBox();
             this.btnLogIn = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.groomyDataSet1 = new Groomy.GroomyDataSet();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groomyDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtName
@@ -42,7 +47,7 @@
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtName.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtName.Enabled = false;
-            this.txtName.Location = new System.Drawing.Point(45, 49);
+            this.txtName.Location = new System.Drawing.Point(10, 11);
             this.txtName.Name = "txtName";
             this.txtName.ReadOnly = true;
             this.txtName.Size = new System.Drawing.Size(55, 13);
@@ -53,7 +58,7 @@
             // 
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass.Enabled = false;
-            this.txtPass.Location = new System.Drawing.Point(45, 68);
+            this.txtPass.Location = new System.Drawing.Point(10, 30);
             this.txtPass.Name = "txtPass";
             this.txtPass.ReadOnly = true;
             this.txtPass.Size = new System.Drawing.Size(55, 13);
@@ -62,14 +67,14 @@
             // 
             // txtUserInput
             // 
-            this.txtUserInput.Location = new System.Drawing.Point(107, 41);
+            this.txtUserInput.Location = new System.Drawing.Point(72, 3);
             this.txtUserInput.Name = "txtUserInput";
             this.txtUserInput.Size = new System.Drawing.Size(100, 20);
             this.txtUserInput.TabIndex = 2;
             // 
             // txtPassInput
             // 
-            this.txtPassInput.Location = new System.Drawing.Point(107, 68);
+            this.txtPassInput.Location = new System.Drawing.Point(72, 30);
             this.txtPassInput.Name = "txtPassInput";
             this.txtPassInput.PasswordChar = '*';
             this.txtPassInput.Size = new System.Drawing.Size(100, 20);
@@ -77,7 +82,7 @@
             // 
             // btnLogIn
             // 
-            this.btnLogIn.Location = new System.Drawing.Point(45, 123);
+            this.btnLogIn.Location = new System.Drawing.Point(28, 82);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(75, 23);
             this.btnLogIn.TabIndex = 4;
@@ -87,7 +92,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(127, 123);
+            this.btnExit.Location = new System.Drawing.Point(69, 111);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 5;
@@ -95,21 +100,48 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnNew
+            // 
+            this.btnNew.Location = new System.Drawing.Point(109, 82);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(75, 23);
+            this.btnNew.TabIndex = 6;
+            this.btnNew.Text = "&New User";
+            this.btnNew.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.txtUserInput);
+            this.panel1.Controls.Add(this.txtName);
+            this.panel1.Controls.Add(this.txtPass);
+            this.panel1.Controls.Add(this.txtPassInput);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(189, 64);
+            this.panel1.TabIndex = 7;
+            // 
+            // groomyDataSet1
+            // 
+            this.groomyDataSet1.DataSetName = "GroomyDataSet";
+            this.groomyDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(247, 158);
+            this.ClientSize = new System.Drawing.Size(210, 142);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogIn);
-            this.Controls.Add(this.txtPassInput);
-            this.Controls.Add(this.txtUserInput);
-            this.Controls.Add(this.txtPass);
-            this.Controls.Add(this.txtName);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Login";
             this.Text = "Login";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groomyDataSet1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -121,6 +153,9 @@
         private System.Windows.Forms.TextBox txtPassInput;
         private System.Windows.Forms.Button btnLogIn;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.Panel panel1;
+        private GroomyDataSet groomyDataSet1;
     }
 }
 

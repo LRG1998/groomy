@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Groomy
 {
-    internal class SystemErrors
+    internal class  IncorrectUsernamePassword: Exception
     {
-        public Exception NoUserName
-        {
-            get; set;
-        }
+        public string UserName { get; }
+        public string Password { get; }
+        
 
-        public Exception NoPassword
-        {
-            get; set;
-        }
+        public IncorrectUsernamePassword() { }
+        public IncorrectUsernamePassword(string message) : base(message) { }
+
+        public IncorrectUsernamePassword(string message, Exception inner) : base(message, inner) { }
+        
     }
 }

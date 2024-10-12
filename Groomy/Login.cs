@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace Groomy
 {
     public partial class Login : Form
     {
+        private Form accountForm;
         public Login()
         {
             InitializeComponent();
@@ -24,15 +26,9 @@ namespace Groomy
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            if(txtUserInput.Text != "")
-            {
-                Console.WriteLine(txtUserInput.Text.ToString());
-            }
-            else
-            {
-                Console.Error.WriteLine("No User Name!");
-
-            }
+            accountForm = new AccountsInfo();
+            accountForm.ShowDialog();
         }
+
     }
 }

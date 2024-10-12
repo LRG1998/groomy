@@ -46,6 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountsInfo.Designer.cs">
+      <DependentUpon>AccountsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroomyDataSet.cs">
+      <DependentUpon>GroomyDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SystemErrors.cs" />
     <Compile Include="GroomyDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -60,6 +75,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AccountsInfo.resx">
+      <DependentUpon>AccountsInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
