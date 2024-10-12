@@ -5,6 +5,11 @@ VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Groomy", "Groomy\Groomy.csproj", "{2EA90709-8764-41FF-9B44-6729977BC68E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9440C84D-700B-4AC1-A7F0-9F64B7FE98D7}"
+	ProjectSection(SolutionItems) = preProject
+		Groomy\dbo.sql = Groomy\dbo.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
